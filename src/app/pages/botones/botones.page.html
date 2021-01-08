@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>botones</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button color="danger">
+        <ion-icon name="heart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- botones size -->
+  <ion-button size="small" expand="full">Small</ion-button>
+  <ion-button size="default" expand="full">Default</ion-button>
+  <ion-button size="large" expand="full">Large</ion-button>
+
+  <!-- anchor -->
+  <ion-button class="top-20" expand="block" routerLink="/alert" color="tertiary">
+    link
+  </ion-button>
+
+  <!-- ion-row + ion-col -->
+  <ion-row>
+    <ion-col>
+      <ion-button expand="block" routerLink="/alert" color="tertiary">
+        Alert
+      </ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button expand="block" routerLink="/action-sheet" color="tertiary">
+        Action Sheet
+      </ion-button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>
